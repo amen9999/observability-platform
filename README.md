@@ -13,33 +13,8 @@ A full observability stack built with Docker Compose, Prometheus, Grafana, Loki,
 
 ## Architecture
 
-```text
-                      +------------------+
-                      |    Flask App     |
-                      +---------+--------+
-                                |
-              Metrics           | Logs
-                 |              |
-                 v              v
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/4c56e4b9-5336-4535-b8ec-787c212b59ce" />
 
-     +------------------+   +------------------+
-     |   Prometheus     |   |    Promtail      |
-     +---------+--------+   +---------+--------+
-               |                      |
-               +----------+-----------+
-                          |
-                          v
-
-                 +------------------+
-                 |      Loki        |
-                 +---------+--------+
-                           |
-                           v
-
-                 +------------------+
-                 |     Grafana      |
-                 +------------------+
-```
 
 ## Technology Stack
 
